@@ -1,32 +1,29 @@
+# metalsmith-chat-excerpts
 
-# metalsmith-excerpts
-
-  A [Metalsmith](http://metalsmith.io) plugin to extract an excerpt from Markdown files.
+> A Metalsmith plugin to extract an excerpt from chat logs.
 
 ## Installation
 
     $ npm install metalsmith-excerpts
 
-## CLI Usage
-
-  Install via npm and then add the `metalsmith-excerpts` key to your `metalsmith.json` plugin, like so:
-
-```json
-{
-  "plugins": {
-    "metalsmith-excerpts": true
-  } 
-}
-```
-
 ## Javascript Usage
 
 ```js
-var excerpts = require('metalsmith-excerpts');
+var excerpts = require('metalsmith-chat-excerpts');
 
-metalsmith.use(excerpts());
+metalsmith.use(excerpts({
+  lines: 5
+}));
 ```
+
+## Options
+
+### lines
+Type: `Integer`
+Default: `5`
+
+Sets the number of lines from the beginning of the log to use for an excerpt.
 
 ## License
 
-  MIT
+MIT
