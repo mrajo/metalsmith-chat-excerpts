@@ -1,13 +1,12 @@
 {
-  "name": "metalsmith-excerpts",
-  "description": "A Metalsmith plugin to extract an excerpt from Markdown files.",
-  "repository": "git://github.com/segmentio/metalsmith-excerpts.git",
+  "name": "metalsmith-chat-excerpts",
+  "description": "A Metalsmith plugin to extract an excerpt from chat logs.",
   "version": "1.0.0",
   "license": "MIT",
   "main": "lib/index.js",
   "dependencies": {
-    "cheerio": "^0.15.0",
-    "debug": "~0.7.4"
+    "debug": "~0.7.4",
+    "extend": "^3.0.0"
   },
   "devDependencies": {
     "metalsmith": "0.x",
